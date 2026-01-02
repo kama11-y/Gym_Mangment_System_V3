@@ -1,0 +1,31 @@
+smart_gym_system
+├── config
+│   └── settings.py
+├── database
+│   ├── db.py
+│   ├── models
+│   │   ├── members.py
+│   │   ├── coaches.py
+│   │   ├── attendance.py
+│   │   ├── payments.py
+│   │   └── memberships.py
+├── services
+│   ├── member_service.py
+│   ├── coach_service.py
+│   ├── payment_service.py
+│   ├── attendance_service.py
+│   └── report_service.py
+├── etl
+│   ├── extract.py
+│   ├── transform.py
+│   └── load.py
+├── analytics
+│   ├── revenue_analysis.py
+│   ├── attendance_analysis.py
+│   └── member_stats.py
+├── exports
+│   ├── csv
+│   ├── json
+│   └── reports
+├── main.py
+└── README.md
