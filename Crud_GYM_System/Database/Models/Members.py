@@ -2,7 +2,6 @@ from Database.Models.Person import Person ,datetime
 
 class Member(Person):
     def __init__(self, Id, Full_name, Email, Phone,Membership_id, Is_active=None, Created_at=None, Updated_at=None):
-
         # Public Attributes 
         super().__init__(Id, Full_name, Email, Phone, Is_active, Created_at, Updated_at)
         self.join_date = datetime.now()
