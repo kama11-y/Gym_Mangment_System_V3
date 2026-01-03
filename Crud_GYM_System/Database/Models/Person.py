@@ -12,6 +12,7 @@ class Person:
         # Protected Attributes
         self._Created_at = datetime.now()
         self._Updated_at = None
+    
     def __str__(self):
         return f'''
     Id : {self.id }
@@ -21,4 +22,21 @@ class Person:
     Is Active :{self.Is_active}
     Created At : {self._Created_at }
     Updated at : {self._Updated_at}
-'''
+    '''
+
+    def deactivate(self): # This Method To Make Member Desactive
+        self.Is_active = False
+        self._Updated_at = datetime.now()
+
+    def activate(self): # This Method To Make Member Active
+        self.Is_active = True
+        self._Updated_at = datetime.now()
+
+    def update_contact(self, Email=None, Phone=None): # Method To Update Members Info
+        if Email:
+            self.Email = Email
+        if Phone:
+            self.Phone = Phone
+        self._Updated_at = datetime.now()
+    
+
